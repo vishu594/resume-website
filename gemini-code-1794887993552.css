@@ -1,0 +1,336 @@
+/* =========================================
+   1. CSS Variables & Consistent Color Palette
+   ========================================= */
+:root {
+  --bg-page: #f8fafc;
+  --bg-surface: #ffffff;
+  --primary-navy: #0f172a;
+  --accent-indigo: #1e40af;
+  --accent-soft: #eff6ff;
+  --text-main: #1e293b;
+  --text-muted: #475569;
+  --border-light: #e2e8f0;
+  --shadow-sm: 0 2px 8px rgba(15, 23, 42, 0.06);
+  --shadow-md: 0 8px 20px rgba(15, 23, 42, 0.08);
+}
+
+/* =========================================
+   2. Reset & Base Typography
+   ========================================= */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: var(--bg-page);
+  color: var(--text-main);
+  line-height: 1.65;
+  font-size: 16px;
+}
+
+h1, h2, .brand-logo {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  color: var(--primary-navy);
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* =========================================
+   3. Sticky Navigation Bar (Positioning & Flexbox)
+   ========================================= */
+#top-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: rgba(255, 255, 255, 0.95);
+  border-bottom: 1px solid var(--border-light);
+  backdrop-filter: blur(6px);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 64px;
+}
+
+.brand-logo {
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-decoration: none;
+  letter-spacing: -0.02em;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--text-muted);
+  font-size: 0.92rem;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+  color: var(--accent-indigo);
+}
+
+/* =========================================
+   4. Hero Section
+   ========================================= */
+.hero-card {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-light);
+  border-left: 5px solid var(--accent-indigo);
+  border-radius: 12px;
+  padding: 40px 36px;
+  margin-top: 32px;
+  box-shadow: var(--shadow-sm);
+}
+
+.badge {
+  display: inline-block;
+  background-color: var(--accent-soft);
+  color: var(--accent-indigo);
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 4px 12px;
+  border-radius: 999px;
+  margin-bottom: 14px;
+}
+
+.hero-card h1 {
+  font-size: 2.25rem;
+  line-height: 1.2;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--accent-indigo);
+  margin-bottom: 16px;
+}
+
+.bio {
+  color: var(--text-muted);
+  max-width: 780px;
+  margin-bottom: 20px;
+}
+
+.contact-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  padding-top: 16px;
+  border-top: 1px solid var(--border-light);
+}
+
+.contact-bar a {
+  color: var(--accent-indigo);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.contact-bar a:hover {
+  text-decoration: underline;
+}
+
+/* =========================================
+   5. Sections, Cards & Grid Layouts
+   ========================================= */
+.content-section {
+  margin-top: 40px;
+}
+
+.section-heading {
+  font-size: 1.45rem;
+  margin-bottom: 18px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid var(--border-light);
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.card {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-light);
+  border-radius: 10px;
+  padding: 24px;
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.card h3 {
+  font-size: 1.08rem;
+  color: var(--primary-navy);
+}
+
+.role-title {
+  font-weight: 600;
+  color: var(--accent-indigo);
+  font-size: 0.95rem;
+  margin-top: 2px;
+}
+
+.date-tag {
+  font-size: 0.8rem;
+  font-weight: 600;
+  background-color: var(--bg-page);
+  color: var(--text-muted);
+  border: 1px solid var(--border-light);
+  padding: 3px 10px;
+  border-radius: 6px;
+  white-space: nowrap;
+}
+
+.card-text {
+  color: var(--text-muted);
+  font-size: 0.94rem;
+}
+
+/* =========================================
+   6. Skill Tags & Lists
+   ========================================= */
+.tag-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.tag-list li {
+  background-color: var(--accent-soft);
+  color: var(--accent-indigo);
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 6px;
+}
+
+.clean-list {
+  list-style: none;
+  margin-top: 12px;
+}
+
+.clean-list li {
+  padding: 6px 0;
+  font-size: 0.94rem;
+  color: var(--text-muted);
+  border-bottom: 1px dashed var(--border-light);
+}
+
+.clean-list li:last-child {
+  border-bottom: none;
+}
+
+/* =========================================
+   7. Milestones & Footer
+   ========================================= */
+.milestone-metric {
+  display: inline-block;
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--accent-indigo);
+  margin-bottom: 6px;
+}
+
+#site-footer {
+  margin-top: 56px;
+  padding: 24px 0;
+  border-top: 1px solid var(--border-light);
+  background-color: var(--bg-surface);
+  font-size: 0.88rem;
+  color: var(--text-muted);
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.back-to-top {
+  color: var(--accent-indigo);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* =========================================
+   8. Responsive Breakpoints (Mobile/Tablet)
+   ========================================= */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    height: auto;
+    padding: 12px 0;
+    gap: 10px;
+  }
+
+  .nav-links {
+    gap: 14px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero-card {
+    padding: 28px 22px;
+  }
+
+  .hero-card h1 {
+    font-size: 1.75rem;
+  }
+
+  .grid-2, .grid-3 {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+}
