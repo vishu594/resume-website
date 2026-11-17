@@ -134,7 +134,7 @@ h1, h2, .brand-logo {
 }
 
 /* =========================================
-   4. Hero Section
+   4. Hero Section & Profile Photo
    ========================================= */
 .hero-card {
   background-color: var(--bg-surface);
@@ -143,6 +143,22 @@ h1, h2, .brand-logo {
   border-radius: 12px;
   padding: 40px 36px;
   margin-top: 32px;
+  box-shadow: var(--shadow-sm);
+}
+
+.hero-layout {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.profile-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--accent-indigo);
+  flex-shrink: 0;
   box-shadow: var(--shadow-sm);
 }
 
@@ -440,6 +456,15 @@ h1, h2, .brand-logo {
 
   .hero-card {
     padding: 28px 22px;
+  }
+
+  .hero-layout {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .contact-bar {
+    justify-content: center;
   }
 
   .hero-card h1 {
