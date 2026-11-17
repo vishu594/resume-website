@@ -17,13 +17,17 @@
   <header id="top-header">
     <nav class="navbar container">
       <a href="#about" class="brand-logo">Arpit Kumar Verma</a>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#projects">Ventures</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#milestones">Milestones</a></li>
-      </ul>
+      <div class="nav-right">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#projects">Ventures</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#achievements">Achievements</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button id="theme-toggle" class="theme-btn" aria-label="Toggle Dark Mode" title="Switch Theme">🌙</button>
+      </div>
     </nav>
   </header>
 
@@ -35,20 +39,23 @@
         <h1>Arpit Kumar Verma</h1>
         <p class="subtitle">Digital Business Undergraduate • Content Strategist • Endurance Athlete</p>
         <p class="bio">
-          Undergraduate student in the Bachelor of Business Administration in Digital Business &amp; Entrepreneurship (BBA DBE) program at the Indian Institute of Management Bangalore, based in Varanasi, Uttar Pradesh. Focused on building scalable digital media systems, AI-assisted content workflows, and disciplined personal performance.
+          Undergraduate student in the Bachelor of Business Administration in Digital Business &amp; Entrepreneurship (BBA DBE) program at the Indian Institute of Management Bangalore, based in Varanasi, Uttar Pradesh. Focused on building scalable digital media systems, AI-assisted content workflows, vocal performance, and disciplined personal endurance.
         </p>
         <div class="contact-bar">
           <span>📍 Varanasi, Uttar Pradesh, India</span>
           <span>•</span>
           <a href="https://instagram.com/thedeepreflect" target="_blank" rel="noopener noreferrer">Instagram: @thedeepreflect</a>
+          <span>•</span>
+          <a href="#contact">Get in Touch ↓</a>
         </div>
       </div>
     </section>
 
-    <!-- Education Section -->
+    <!-- Education & Academic Record Section -->
     <section id="education" class="content-section">
-      <h2 class="section-heading">Education</h2>
-      <div class="card">
+      <h2 class="section-heading">Education &amp; Academic Record</h2>
+
+      <div class="card featured-card">
         <div class="card-header">
           <div>
             <h3>Indian Institute of Management Bangalore (IIMB)</h3>
@@ -59,6 +66,35 @@
         <p class="card-text">
           Core coursework in Digital Business Models, Web Design &amp; Development, Business Communication, Financial Accounting, and Entrepreneurship.
         </p>
+      </div>
+
+      <div class="grid-3 edu-grid">
+        <div class="card">
+          <div class="card-header">
+            <h3>CUET (UG) – General Aptitude Test</h3>
+            <span class="date-tag">Entrance</span>
+          </div>
+          <p class="metric-highlight">98.17 Percentile</p>
+          <p class="card-text">Ranked in the top 1.83% nationwide in the Common University Entrance Test General Aptitude section.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <h3>Senior Secondary (Class XII)</h3>
+            <span class="date-tag">Higher Secondary</span>
+          </div>
+          <p class="metric-highlight">64.0%</p>
+          <p class="card-text">Completed higher secondary education while transitioning focus toward digital entrepreneurship and aptitude preparation.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <h3>Secondary School (Class X)</h3>
+            <span class="date-tag">Matriculation</span>
+          </div>
+          <p class="metric-highlight">89.8% Aggregate</p>
+          <p class="card-text">Scored <strong>96/100 in Social Science</strong> and <strong>94/100 in Mathematics</strong>.</p>
+        </div>
       </div>
     </section>
 
@@ -120,7 +156,7 @@
             <li>CapCut PC Video Editing</li>
             <li>AI Content Workflows</li>
             <li>Shopify Storefront Setup</li>
-            <li>Social Media Analytics</li>
+            <li>Vocal Technique &amp; Performance</li>
           </ul>
         </div>
 
@@ -135,26 +171,71 @@
       </div>
     </section>
 
-    <!-- Athletic & Personal Milestones Section -->
-    <section id="milestones" class="content-section">
-      <h2 class="section-heading">Athletic &amp; Personal Milestones</h2>
-      <div class="grid-3">
-        <div class="card milestone-card">
-          <span class="milestone-metric">21.16 km</span>
-          <h3>Half Marathon Finisher</h3>
+    <!-- Cultural, Athletic & Personal Achievements Section -->
+    <section id="achievements" class="content-section">
+      <h2 class="section-heading">Cultural &amp; Athletic Achievements</h2>
+      <div class="grid-2">
+        <div class="card">
+          <span class="milestone-metric">Performing Arts</span>
+          <h3>Vocal Music Competitions</h3>
+          <p class="card-text">Active vocal performer across multiple inter-school and cultural music events, winning prizes in solo vocal competitions while maintaining daily vocal resonance and breath-control practice.</p>
+        </div>
+
+        <div class="card">
+          <span class="milestone-metric">Endurance Running</span>
+          <h3>21.16 km Half Marathon Finisher</h3>
           <p class="card-text">Completed a 21.16 km half marathon in 2:39:17 at an average pace of 7:32 /km (Oct 2026).</p>
         </div>
 
-        <div class="card milestone-card">
-          <span class="milestone-metric">Himalayas</span>
+        <div class="card">
+          <span class="milestone-metric">Mountaineering</span>
           <h3>Vasuki Tal High-Altitude Trek</h3>
           <p class="card-text">Completed high-altitude Himalayan trekking routes in Rudraprayag district, Uttarakhand (Aug 2026).</p>
         </div>
 
-        <div class="card milestone-card">
-          <span class="milestone-metric">Calisthenics</span>
-          <h3>Bodyweight Strength</h3>
-          <p class="card-text">Consistent practitioner of progressive calisthenics, including handstand pushups, front levers, and static breath-hold training.</p>
+        <div class="card">
+          <span class="milestone-metric">Bodyweight Strength</span>
+          <h3>Progressive Calisthenics</h3>
+          <p class="card-text">Consistent practitioner of upper-body calisthenics skills, including wall-assisted handstand pushups, front lever holds, and static breath-hold training (1m 42s personal best).</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="content-section">
+      <h2 class="section-heading">Contact &amp; Connect</h2>
+      <div class="grid-2">
+        <div class="card">
+          <h3>Let’s Collaborate</h3>
+          <p class="card-text" style="margin-bottom: 16px;">
+            Open to discussions on digital business strategy, content creation systems, web design projects, or endurance running in Varanasi.
+          </p>
+          <ul class="clean-list">
+            <li><strong>Location:</strong> Varanasi, Uttar Pradesh, India</li>
+            <li><strong>Instagram:</strong> <a href="https://instagram.com/thedeepreflect" target="_blank" rel="noopener noreferrer" class="inline-link">@thedeepreflect</a></li>
+            <li><strong>Running Club:</strong> Desi Pace Maker (Strava)</li>
+            <li><strong>GitHub:</strong> <a href="https://github.com/vishu594" target="_blank" rel="noopener noreferrer" class="inline-link">github.com/vishu594</a></li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Send a Quick Message</h3>
+          <form class="contact-form" onsubmit="handleFormSubmit(event)">
+            <div class="form-group">
+              <label for="sender-name">Your Name</label>
+              <input type="text" id="sender-name" placeholder="Enter your name" required />
+            </div>
+            <div class="form-group">
+              <label for="sender-email">Your Email</label>
+              <input type="email" id="sender-email" placeholder="you@example.com" required />
+            </div>
+            <div class="form-group">
+              <label for="sender-msg">Message</label>
+              <textarea id="sender-msg" rows="3" placeholder="Write your message..." required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Send Message</button>
+            <p id="form-feedback" class="form-feedback"></p>
+          </form>
         </div>
       </div>
     </section>
@@ -168,5 +249,29 @@
     </div>
   </footer>
 
+  <!-- Lightweight Script for Dark/Light Theme Toggle & Form Feedback -->
+  <script>
+    const themeToggle = document.getElementById('theme-toggle');
+    const rootEl = document.documentElement;
+
+    themeToggle.addEventListener('click', () => {
+      const isDark = rootEl.getAttribute('data-theme') === 'dark';
+      if (isDark) {
+        rootEl.removeAttribute('data-theme');
+        themeToggle.textContent = '🌙';
+      } else {
+        rootEl.setAttribute('data-theme', 'dark');
+        themeToggle.textContent = '☀️';
+      }
+    });
+
+    function handleFormSubmit(event) {
+      event.preventDefault();
+      const name = document.getElementById('sender-name').value;
+      const feedback = document.getElementById('form-feedback');
+      feedback.textContent = `Thank you, ${name}! Your message has been recorded.`;
+      event.target.reset();
+    }
+  </script>
 </body>
 </html>
